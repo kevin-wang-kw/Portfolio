@@ -10,7 +10,8 @@ export default function Home() {
         Software designer, founder, and amateur astronaut.
       </h1>
       <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        I'm Kevin a mechanical engineering graduate working towards my P.eng [ect fill more info later]
+        I'm Kevin a mechanical engineering graduate working towards my P.eng
+        [ect fill more info later]
       </p>
       <div className="mt-12">
         <h1 className="font-medium text-xl mb-2">My Projects</h1>
@@ -21,12 +22,7 @@ export default function Home() {
           {Projects.map((project) => (
             <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <Image
-                  src={project.image}
-                  alt=""
-                  width={250}
-                  height={250}
-                />
+                <Image src={project.image} alt="" width={250} height={250} />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>

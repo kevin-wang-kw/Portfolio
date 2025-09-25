@@ -23,7 +23,4 @@ export const LensHolder = {
   image: "/images/Iso View Lens Holder.JPG",
 };
 
-export const Projects = [
-  StairAssist,
-  LensHolder,
-];
+export const Projects = [StairAssist, LensHolder];
