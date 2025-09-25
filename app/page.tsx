@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Card } from "@/components/Card";
 import { LinkIcon } from "lucide-react";
+import { Card } from "@/components/Card";
 import { Projects } from "@/lib/data";
 
 export default function Home() {
