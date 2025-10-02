@@ -11,14 +11,15 @@ export const StairAssist = {
   description:
     "Capstone project creating a stair assist device for elderly client",
   link: { href: "/stair-assist", label: "Read More" },
-  image: "/images/Iso View Lens Holder.JPG",
-  text: "This was an awesome project\nThis is a new line.",
+  image: "/images/Stair Assist Iso.png", 
+  text: "This project was completed as my  year capstone to assist an elderly client in easing the movement \n up and down an outdoor set of stairs. The protype was designed to be suitable for various heights and\n stair surfaces. ",
+  
 };
 
 export const LensHolder = {
   name: "Lens Holder",
   description:
-    "Capstone project creating a stair assist device for elderly client",
+    "Lens test fixture developed to assist production with testing",
   link: { href: "/lens-holder", label: "Read More" },
   image: "/images/Iso View Lens Holder.JPG",
 };

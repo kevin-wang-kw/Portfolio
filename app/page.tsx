@@ -10,11 +10,11 @@ export default function Home() {
         Software designer, founder, and amateur astronaut.
       </h1>
       <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        I'm Kevin a mechanical engineering graduate working towards my P.eng
-        [ect fill more info later]
+        I'm Kevin a mechanical engineering graduate working towards earning a
+        Professional Engineering Desgination [ect fill more info later]
       </p>
       <div className="mt-12">
-        <h1 className="font-medium text-xl mb-2">My Projects</h1>
+        <h1 className="font-medium text-xl mb-2">My Portfolio</h1>
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-16 gap-y-16 sm:grid-cols-2 py-6"
