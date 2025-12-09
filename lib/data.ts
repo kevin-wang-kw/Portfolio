@@ -40,7 +40,7 @@ export const LensHolder: Project = {
     "The lens holder jig was designed to support production investigations during root cause analysis and optical testing. The jig consists of two primary 3D-printed components: a weighted base plate featuring dovetail attachment points, and interchangeable lens holder brackets that slide into the exposed dovetails. ",
     "A transition fit between the mating surfaces proved  ideal for this project, allowing operators to quickly swap brackets while maintaining sufficient stiffness during lens alignment and testing. Design constraints included cost efficiency, rapid iteration, and compatibility with multiple lens geometries. ",
     "\n \n The modular jig architecture enabled testing of various lenses using a single fixture, reducing both tooling costs and required storage footprint. Utilizing the in-house 3D printer for this project, new lens holder brackets could be designed, printed, and prepared for use within 12 hours, supporting fast turnaround during production investigations. ",
-    "Multiple fit checks during development ensued repeatable use across multiple lens holder brackets. As finer alignment during testing was performed manually by the equipment operator, the weighted base and snug dovetail sliding interface provided sufficient stability and positional consistency. ",
+    "Multiple fit checks during development ensured repeatable use across multiple lens holder brackets. As finer alignment during testing was performed manually by the equipment operator, the weighted base and snug dovetail sliding interface provided sufficient stability and positional consistency. ",
   ],
 };
 

@@ -14,7 +14,10 @@ export default function Writeup({ project }: { project: Project }) {
   return (
     <div className="mx-auto max-w-6xl p-6 py-12">
       <div>
-        <Link href="/" className="mb-2 text-lg font-semibold flex items-center gap-2">
+        <Link
+          href="/"
+          className="mb-2 flex items-center gap-2 text-lg font-semibold"
+        >
           <ChevronLeftIcon className="h-6 w-6" />
           Return to Portfolio
         </Link>
@@ -29,10 +32,10 @@ export default function Writeup({ project }: { project: Project }) {
             loop: true,
           }}
           className=""
-                  // style={{ width: "100%", height: "auto" }}
+          // style={{ width: "100%", height: "auto" }}
         >
           <CarouselContent>
-            <CarouselItem> 
+            <CarouselItem>
               {/* make sure that all image formating is within the carousel item bracket*/}
               <Image
                 src={project.image}
@@ -45,14 +48,18 @@ export default function Writeup({ project }: { project: Project }) {
             </CarouselItem>
             {project.images?.map((image) => (
               <CarouselItem key={image}>
-                 <Image
-                src={image}
-                alt=""
-                width={0}
-                height={0}
-                sizes="80vw"
-                style={{ width: "100%", height: "80dvh", objectFit: "contain" }}
-              />
+                <Image
+                  src={image}
+                  alt=""
+                  width={0}
+                  height={0}
+                  sizes="80vw"
+                  style={{
+                    width: "100%",
+                    height: "80dvh",
+                    objectFit: "contain",
+                  }}
+                />
               </CarouselItem>
             ))}
             {project.document && (
