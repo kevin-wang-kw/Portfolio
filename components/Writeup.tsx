@@ -1,5 +1,6 @@
 import { Project } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
@@ -7,10 +8,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/Carousel";
+import { ChevronLeftIcon } from "lucide-react";
 
 export default function Writeup({ project }: { project: Project }) {
   return (
     <div className="mx-auto max-w-6xl p-6 py-12">
+      <div>
+        <Link href="/" className="mb-2 text-lg font-semibold flex items-center gap-2">
+          <ChevronLeftIcon className="h-6 w-6" />
+          Return to Portfolio
+        </Link>
+      </div>
       <div className="pb-6">
         <h1 className="mb-2 text-2xl font-bold">{project.name}</h1>
         <p className="whitespace-pre-line">{project.text}</p>

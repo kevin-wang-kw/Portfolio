@@ -34,7 +34,7 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="h-auto w-full rounded-sm bg-white shadow-md shadow-zinc-800/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800"
+                  className="h-auto w-full rounded-xs bg-white shadow-md shadow-zinc-800/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800"
                   loading="eager"
                 />
               </div>
