@@ -136,20 +136,24 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
   const { carouselRef, orientation } = useCarousel();
 
   return (
-    <div
-      ref={carouselRef}
-      className="overflow-hidden"
-      data-slot="carousel-content"
-    >
+    <>
+      <div className="from-background absolute left-0 z-10 h-full w-16 bg-linear-to-r to-transparent" />
+      <div className="from-background absolute right-0 z-10 h-full w-16 bg-linear-to-l to-transparent" />
       <div
-        className={cn(
-          "flex",
-          orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
-          className,
-        )}
-        {...props}
-      />
-    </div>
+        ref={carouselRef}
+        className="overflow-hidden"
+        data-slot="carousel-content"
+      >
+        <div
+          className={cn(
+            "flex",
+            orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+            className,
+          )}
+          {...props}
+        />
+      </div>
+    </>
   );
 }
 
@@ -186,9 +190,9 @@ function CarouselPrevious({
       size={size}
       className={cn(
         /*controls button size */
-        "absolute size-12 rounded-full",
+        "absolute z-10 size-12 rounded-full",
         orientation === "horizontal"
-          ? "top-1/2 -left-12 -translate-y-1/2"
+          ? "top-1/2 left-0 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className,
       )}
@@ -216,9 +220,9 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-12 rounded-full",
+        "absolute z-10 size-12 rounded-full",
         orientation === "horizontal"
-          ? "top-1/2 -right-12 -translate-y-1/2"
+          ? "top-1/2 right-0 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className,
       )}
