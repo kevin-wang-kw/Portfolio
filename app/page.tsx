@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-6xl p-6 py-12">
       <h1 className="text-2xl font-bold tracking-tight sm:text-4xl">
-        Mechanical designer, tinkerer, and amateur programer.
+        Mechanical designer, tinkerer, and amateur programmer.
       </h1>
       <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
         I&apos;m Kevin, a mechanical engineering graduate working towards
