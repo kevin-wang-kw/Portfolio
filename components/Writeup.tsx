@@ -14,13 +14,17 @@ export default function Writeup({ project }: { project: Project }) {
   return (
     <div className="mx-auto max-w-6xl p-6 py-12">
       <div>
-        <Link
-          href="/"
-          className="mb-2 flex items-center gap-2 text-lg font-semibold"
-        >
-          <ChevronLeftIcon className="h-6 w-6" />
-          Return to Portfolio
-        </Link>
+        {/* Return Button */}
+        <div className="group relative mb-4 inline-flex active:scale-95 transition">
+          <div className="absolute -inset-x-3 -inset-y-2 -right-4 z-0 ml-1 scale-95 rounded-lg bg-zinc-50 opacity-0 transition group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100 md:rounded-xl dark:bg-zinc-800/50" />
+          <Link
+            href="/"
+            className="z-10 inline-flex items-center gap-2 text-lg font-semibold transition-colors will-change-transform outline-none select-none group-focus-within:text-teal-500 group-hover:text-teal-500 group-active:text-teal-600"
+          >
+            <ChevronLeftIcon className="h-6 w-6" />
+            Return to Portfolio
+          </Link>
+        </div>
       </div>
       <div className="pb-6">
         <h1 className="mb-2 text-2xl font-bold">{project.name}</h1>
