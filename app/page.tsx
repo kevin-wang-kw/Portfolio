@@ -44,7 +44,9 @@ export default function Home() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={`projects/${project.id}`}>
+                  {project.name}
+                </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <div className="relative z-10 -mx-3 mt-6 flex items-center gap-2 rounded-full bg-zinc-100 px-3 py-2 text-sm leading-none font-medium text-zinc-500 transition select-none group-focus-within:bg-teal-50 group-focus-within:text-teal-500 group-hover:bg-teal-50 group-hover:text-teal-500 group-active:bg-teal-100/50 group-active:text-teal-600 dark:text-zinc-200">
